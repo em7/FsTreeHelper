@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FsTreeHelperLib;
+using FsTreeHelperLib.DendrogramTraversal;
 
 namespace FsTreeHelper
 {
@@ -32,7 +32,7 @@ namespace FsTreeHelper
                 }
             };
 
-            var rootCluster = DendrogramTraversal.Cluster<Node>.Create(tree, n => n.LChild, n => n.RChild);
+            var rootCluster = Cluster<Node>.Create(tree, n => n.LChild, n => n.RChild);
         }
     }
 }

@@ -33,7 +33,6 @@ namespace FsTreeHelper
             };
 
             var rootCluster = DendrogramTraversal.Cluster<Node>.Create(tree, n => n.LChild, n => n.RChild);
-            
         }
     }
 }

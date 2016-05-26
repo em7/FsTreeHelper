@@ -48,8 +48,7 @@ module DendrogramTraversal =
                             | None -> null
         
         /// If doesn't have any children, is considered a leaf
-        member this.IsLeaf
-            with get () = isLeaf
+        member this.IsLeaf = isLeaf
 
         /// Creates a new instance of Cluster, without checking the parameters
         static member private CreatePvt(cluster:'c, lChildAccessor:ClusterChildAccessor<'c>, rChildAccessor:ClusterChildAccessor<'c>) =
